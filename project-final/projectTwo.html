@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>גרפיקה ממוחשבת</title>
+    <meta name="description" content="projects from talem first year" />
+    <meta name="keywords" content="פוטושופ,photoshop,illustrator,טלמ, טכנולוגיות למידה, שנה א, מכון טכנולוגי, קורסים" />
+    <meta name="author" content="Noy Hershkovitz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <!-- CSS -->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+  
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                    <li><a href="index.html">דף הבית</a></li>
+
+                    <li>
+                        <a href="projectOne.html">מבוא לתקשורת חזותית</a>
+                        <ul>
+                            <li><a href="projectOne.html">פרויקט סיום</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="current" href="projectTwo.html">גרפיקה ממוחשבת</a>
+                        <ul>
+                            <li> <a href=projectTwo.html>פוסטר למכון </a> </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="projectThree.html">ארגון וייצוג ידע</a>
+                        <ul>
+                            <li> <a href=projectThree.html> מי אני? </a> </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="breadcrumbs"><a href="index.html">דף הבית </a> >גרפיקה ממוחשבת> פוסטר למכון</div>
+        <article>
+            <section>
+                <div class=" head">
+                    <h1>
+                        מטלה במסגרת קורס גרפיקה ממוחשבת
+                    </h1>
+                </div>
+                <div class="parh">
+                    <p>
+                        לכבוד ציון 50 שנה למכון הטכנולוגי קיבלנו מטלה להכין פוסטר מקורי למכון.
+                        <br />המכללה עוסקת בתחומי המחשוב והאלקטרוניקה, ולכן החלטתי לעצב את הפוסטר כמסע לחלל
+                        <br /> ואל העתיד הטכנולוגי.
+                    </p>
+                </div>
+                <figure>
+                    <a href="pictures/spacePoster.JPG"
+                       target="_blank">
+                        <img id="myImage" src="pictures/spacePoster.JPG" />
+
+                    </a>
+                </figure>
+                <div class="audio">
+                    <p>
+
+                        <br /><b> מזל טוב למכון! ,</b>
+                        לשמיעת השיר לחץ על הפעל
+                    </p>
+                </div>
+
+                <aside>
+                    <div class="audio">
+
+                        <audio controls="controls">
+                            <source src="audio/happy-birthday.mp3" type="audio/mpeg" />
+                           
+                        </audio>
+
+                    </div>
+                </aside>
+            </section>
+        </article>
+
+        <script>
+            $('nav li').hover(
+                function () {
+                    $('ul', this).stop().slideDown(200);
+                },
+                function () {
+                    $('ul', this).stop().slideUp(200);
+                }
+            );
+        </script>
+</body>
+</html>

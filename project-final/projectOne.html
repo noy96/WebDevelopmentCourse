@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>מבוא לתקשורת חזותית</title>
+    <meta name="description" content="projects from talem first year" />
+    <meta name="keywords" content="טלמ, טכנולוגיות למידה, שנה א, מכון טכנולוגי, קורסים,תקשורת חזותית, עיצוב" />
+    <meta name="author" content="Noy Hershkovitz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+
+    <!-- CSS -->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+    
+        <div id="container">
+            <header>
+
+            <nav>
+                <ul>
+                    <li>
+                    <li><a href="index.html">דף הבית</a></li>
+
+                    <li>
+                        <a class="current" href="projectOne.html">מבוא לתקשורת חזותית</a>
+                        <ul>
+                            <li><a href="projectOne.html">פרויקט סיום</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="projectTwo.html">גרפיקה ממוחשבת</a>
+                        <ul>
+                            <li> <a href=projectTwo.html>פוסטר למכון </a> </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="projectThree.html">ארגון וייצוג ידע</a>
+                        <ul>
+                            <li> <a href=projectThree.html> מי אני? </a> </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+    </header>
+
+    <div class="breadcrumbs"><a href="index.html">דף הבית </a> > מבוא לתקשורת חזותית>פרויקט סיום</div>
+    <article>
+        <section>
+            <h1 class="head">
+                תוצר פרויקט סיום מבוא לתקשורת חזותית
+            </h1>
+
+            <p class="parh">
+                במסגרת פרויקט סיום בקורס מבוא לתקשורת חזותית וגרפיקה התבקשנו לבחור יצירה מוכרת מהעבר וליצור אינטרפטציה חדשה עם משמעות רלוונטית
+                לתקופתנו.
+            </p>
+            <figure>
+                <a href="pictures/finalProject.jpg"
+                   target="_blank">
+                    <img id="myImage" src="pictures/finalProject.jpg" />
+                </a>
+            </figure>
+
+            <div class="parh">
+                <p>
+                    כחלק מהמטלה התבקשנו ליצור סרטון באורך דקה ובו מפורט התהליך וההסבר הפרשני של היצירה המקורית והמחודשת.
+                </p>
+            </div>
+            <div id="parh">
+                <p>
+                    לצפייה לחץ על הסרטון
+                </p>
+            </div>
+
+            <aside>
+                <div id="myVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M9iy-425DQo" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                     picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </aside>
+        </section>
+    </article>
+    <script>
+        $('nav li').hover(
+            function () {
+                $('ul', this).stop().slideDown(200);
+            },
+            function () {
+                $('ul', this).stop().slideUp(200);
+            }
+        );
+    </script>
+
+</body>
+</html>

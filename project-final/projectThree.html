@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>ארגון וייצוג ידע</title>
+    <meta name="description" content="projects from talem first year " />
+    <meta name="keywords" content="טלמ, טכנולוגיות למידה, שנה א, מכון טכנולוגי, קורסים" />
+    <meta name="author" content="Noy Hershkovitz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <!-- CSS -->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+    
+        <div id="container">
+            <hrader>
+                <nav>
+                    <ul>
+                        <li>
+                        <li><a href="index.html">דף הבית</a></li>
+
+                        <li>
+                            <a href="projectOne.html">מבוא לתקשורת חזותית</a>
+                            <ul>
+                                <li><a href="projectOne.html">פרויקט סיום</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="projectTwo.html">גרפיקה ממוחשבת</a>
+                            <ul>
+                                <li> <a href=projectTwo.html>פוסטר למכון </a> </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="current" href="projectThree.html">ארגון וייצוג ידע</a>
+                            <ul>
+                                <li> <a href=projectThree.html> מי אני? </a> </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </hrader>
+
+    <div class="breadcrumbs"><a href="index.html">דף הבית </a> >ארגון וייצוג ידע> מי אני?</div>
+    <article>
+        <section>
+            <div class="head">
+                <h1>
+                    תוצר מטלה בקורס ייצוג וארגון ידע
+                </h1>
+            </div>
+            <div class="parhThree">
+                <p>
+                    במסגרת הקורס קיבלנו מטלה לעצב ייצוג של חבר בכיתה לפי מאפיין ייחודי.
+                    <br />בחירת האישיות נעשתה באופן רנדומלי. לאחר מציאת  המאפיין התחלנו לעבוד על ייצוג שימחיש באופן מיידי את המאפיין.
+                </p>
+            </div>
+
+            <figure>
+                <a href="pictures/keren.JPG"
+                   target="_blank">
+                    <img id="myImage" src="pictures/keren.JPG" />
+
+                </a>
+            </figure>
+            <div class="audio">
+                <p>
+                    לשמיעת השיר לחץ על הפעל
+                </p>
+            </div>
+            <aside>
+                <div class="audio">
+                    <audio controls="controls">
+                        <source src="audio/lady-gaga-feat-bradley-cooper-shallow.mp3" />
+                        
+
+                    </audio>
+
+                </div>
+            </aside>
+        </section>
+    </article>
+
+    <script>
+        $('nav li').hover(
+            function () {
+                $('ul', this).stop().slideDown(200);
+            },
+            function () {
+                $('ul', this).stop().slideUp(200);
+            }
+        );
+    </script>
+</body>
+</html>

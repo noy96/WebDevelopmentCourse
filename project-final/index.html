@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>דף הבית הצגת פרויקטים</title>
+    <meta name="description" content="projects from talem first year" />
+    <meta name="keywords" content="טלמ, טכנולוגיות למידה, שנה א, מכון טכנולוגי, קורסים" />
+    <meta name="author" content="Noy Hershkovitz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <!-- CSS -->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>    
+</head>
+<body class="bgImage">
+    <header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a class="current" href="index.html">דף הבית </a></li>
+                    <li>
+                        <a href="#">מבוא לתקשורת חזותית </a>
+                        <ul>
+                            <li><a href="projectOne.html">פרויקט סיום</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">גרפיקה ממוחשבת</a>
+                        <ul>
+                            <li><a href="projectTwo.html">פוסטר למכון </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ארגון וייצוג ידע</a>
+                        <ul>
+                            <li><a href="projectThree.html">מי אני? </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <article>
+        <section>
+            <div class="homePage">
+                <h1> עבודות נבחרות שנה א טכנולוגיות למידה </h1>
+
+            </div>
+            <div class="homePage">
+                <p>
+                    <b>ברוכים הבאים!</b>
+                    <br />
+                    שמי נוי הרשקוביץ סטודנטית לטכנולוגיות למידה במכון הטכנולוגי חולון
+                    <br />
+                    באתר זה אציג עבודות נבחרות משנה א מכמה קורסים שונים:
+                </p>
+            </div>
+          <div class="list">
+            <ul>
+                <li>מבוא לתקשורת חזותית: קורס המלמד את יסודות האומנות והעיצוב.</li>
+                <li>גרפיקה ממוחשבת: קורס בסיסי ל Photoshop ו- Illustrator.</li>
+                <li>ארגון וייצוג ידע: קורס ליצירת ייצוג נכון לנתונים מילוליים וכמותיים, יצירת אינפוגרפיקה וייצוג אינטראקטיבי.</li>
+            </ul>
+              </div>
+          <aside>
+              <a href="pictures/HITlogo.png"
+                 target="_blank">
+                  <img id="HIT" src="pictures/HITlogo.png" />
+              </a>
+          </aside>
+
+        </section>
+    </article>
+
+
+    <script>
+        $('nav li').hover(
+            function () {
+                $('ul', this).stop().slideDown(200);
+            },
+            function () {
+                $('ul', this).stop().slideUp(200);
+            }
+        );
+    </script>
+</body>
+</html>

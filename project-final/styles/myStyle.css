@@ -1,0 +1,178 @@
+﻿
+/*כיוון ימין, גודל מסך,גופן*/
+body {
+    direction: rtl;  
+    background-size: cover;
+    width: 960px;
+    margin: 0 auto;
+	font-family: sans-serif;
+}
+
+/*תמונת רקע דף הבית*/
+a {text-decoration:none}
+
+.bgImage{
+	  background-image: url('../pictures/homePage.jpg');
+}
+
+/*רקע לעמודים 2,3,4, גופן, גודל מסך*/
+#container {
+    background-image: url('../pictures/bg.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    width: 960px;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
+/*פקודה לפירורי לחם*/
+.breadcrumbs{clear:both; padding:20px 0}
+
+
+
+/*מיקום תמונות*/
+#myImage {
+    margin-right: 300px;
+    margin-left: auto;
+    
+    position:center;
+    width: 400px 
+    
+    
+   
+}
+
+/*עיצוב טקסט בדף הבית */
+.homePage {
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*עיצוב כותרות בעמודים 2,3,4*/
+.head {
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+/*עיצוב ומיקום פסקאות */
+.parh {
+    margin-right: 150px;
+    font-size: 20px;
+}
+
+#parh {
+    margin-right: 400px;
+    font-size: 20px;
+}
+
+/*מיקום סרטון*/
+#myVideo {
+    margin-right: 250px;
+    font-size: 20px;
+}
+/*מיקום אודיו ופסקה של אודיו*/
+.audio {
+    margin-right: 300px;
+    position:center;
+    font-size:20px;
+}
+/*מיקום תמונה בעמוד הבית*/
+#HIT {
+    margin-right: 350px;
+    margin-left: auto;
+    margin-bottom: 60px;
+    position: center;
+    width: 300px
+}
+/*עיצוב רשימה בעמוד הבית*/
+.list {
+    font-family: sans-serif;
+    font-size: 24px;
+    padding-top: 10px;
+    border: dashed;
+    border-color: pink;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    background-color: mediumpurple;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
+}
+/*(שינוי צבע רקע במעבר עכבר של הרשימה ושינוי זווית במעבר עכבר (אנימציה מלאה*/
+    .list:hover {
+        background-color: palevioletred;
+        -moz-transform: skewX(3deg) skewY(3deg);
+        -webkit-transform: skewX(3deg) skewY(3deg);
+        -o-transform: skewX(3deg) skewY(3deg);
+        -ms-transform: skewX(3deg) skewY(3deg);
+        transform: skewX(3deg) skewY(3deg)
+    }
+
+
+/*מיקום פסקה בדף 4*/
+.parhThree {
+    text-align: center;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+/*עיצוב תפריט ניווט ראשי, כולל גודל גופן, מיקום בשורה, שינוי צבע במעבר עכבר*/
+nav { background: #2ba0db; }
+
+nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 15px 14px;
+  transition: 0.3s linear;
+}
+
+nav ul li:hover { background: #126d9b; }
+
+nav ul li ul {
+  border-bottom: 5px solid #2ba0db;
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  border-top: 1px solid #444;
+  display: block;
+}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+  background: #373737;
+  display: block;
+  padding: 10px 14px;
+}
+
+nav ul li ul li a:hover { background: #126d9b; }
+
+
+/*סימון עמוד נוכחי בצבע*/
+ .current {
+    background-color: mediumpurple;
+}
+
